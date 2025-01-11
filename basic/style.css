@@ -1,0 +1,47 @@
+/*  #ff3368; #ecfdff; */
+
+h1 {
+    color: #ff3368;
+  }
+  
+  .para {
+    color: #ff00ff;
+  }
+  
+  #btn {
+    background-color: #ff3368;
+    color: #fff;
+  }
+  
+  #btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  h1:hover {
+    color: blue;
+  }
+
+/*
+max priority 
+inline css 
+
+Inline CSS > Internal CSS > External CSS (with !important being the ultimate override).
+
+same jo id selector has more specificity than tag selector example like #btn:hover (inside a) has more priority than a:hover
+so there is no effect of a:hover if we apply #btn:hover
+
+
+
+*/
+
+/*? RGBA Colors: RGBA is similar to RGB but includes an alpha channel for
+opacity control. */
+/* alpha - 0 - 1 */
+/* alpha jetlu vadhare etlu dark hoy
+ - colour hunt
+ - hsl ( hue , saturation, lightness)  or hsla
+
+
+
+ */

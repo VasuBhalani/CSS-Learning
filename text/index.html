@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display:grid;
+            place-items:center;
+            background-color:aliceblue;
+        }
+        h1{
+            color:rgb(0, 0, 0);
+            /* background-color: black;
+            background-size:contain; */
+            /* text-decoration-style:solid;
+            text-decoration-color:red; */            
+            text-transform: capitalize; 
+            text-shadow: 4px 4px 10px rgb(196, 75, 75); 
+            /* offset-x offset-y blur-radius color; */
+        }
+        .blog{
+           width:50%;          
+        }
+        p{
+            letter-spacing: 1.5px;
+            word-spacing: 3px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        p::first-letter{
+            color: rgb(249, 5, 5);
+            font-size: 30px;  
+            font-weight: bold;  
+        }
+    </style>
+</head>
+<body>
+    <div class="blog">
+        <h1>The Future of Web3 and Blockchain Technology</h1>
+        <p>The Web3 ecosystem is experiencing remarkable growth in 2024, with decentralized applications (dApps) becoming increasingly mainstream. Ethereum's transition to proof-of-stake has reduced energy consumption by 99.9%, making blockchain technology more sustainable than ever. The rise of decentralized finance (DeFi) continues to challenge traditional banking systems, with total value locked (TVL) exceeding $100 billion. Smart contract platforms are evolving beyond simple transactions, enabling complex digital asset management and automated business processes. Layer-2 scaling solutions have dramatically improved transaction speeds while reducing costs, making blockchain technology more accessible to everyday users. Non-fungible tokens (NFTs) have moved beyond digital art into practical applications like real estate and identity verification. The integration of artificial intelligence with blockchain networks is creating new possibilities for autonomous organizations and decentralized decision-making systems.</p>
+    </div>
+</body>
+</html>
+

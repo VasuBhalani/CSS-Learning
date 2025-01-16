@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        display:grid;
+        place-items:center;    
+        background-color:hsl(0, 0%, 94%);
+    }
+    h1{
+        color: #f0f0f0;
+    }
+    .shadow{
+        margin-top: 50px;
+        width:200px;
+        height: 200px;
+        display:grid;
+        place-items:center;
+        background-color:hsl(0,0%,94%);
+        color:#383333;
+        text-align: center;
+        box-shadow: 3px 3px 15px 5px rgb(250,102,50);
+        border-radius:15%; 
+    }
+    .dropshadow{
+        margin-top: 50px;
+        display:grid;
+        place-items:center;
+        background-color:hsl(0,0%,94%);
+        color:#383333;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+        filter: drop-shadow(0px 0px 60px rgb(61, 61, 61));
+    }
+</style>
+<body>
+    <h1>Shadow</h1>
+    <div class="shadow">
+        <p>Learn CSS</p>
+    </div>
+    <div class="dropshadow">
+       <img src='postman.png'>
+    </div>
+</body>
+</html>

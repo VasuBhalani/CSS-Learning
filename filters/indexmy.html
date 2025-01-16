@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Filters</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            max-width: 1200px;
+        }
+        .filter-item {
+            text-align: center;
+        }
+        .filter-name {
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            color:chocolate;
+            font-weight: 600;
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            object-fit: 100% 100%;
+        }
+        .original { filter: none; }
+        .grayscale { filter: grayscale(100%); }
+        .invert { filter: invert(100%); }
+        .opacity { filter: opacity(60%); }
+        .contrast { filter: contrast(150%); }
+        .brightness { filter: brightness(120%); }
+        .sepia { filter: sepia(100%); }
+        .blur { filter: blur(2px); }
+        .saturate { filter: saturate(200%); }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="filter-item">
+            <img class="original" src="https://avibirds.com/wp-content/uploads/2023/09/american-white-ibis.jpg" alt="Original">
+            <div class="filter-name">Original</div>
+        </div>
+        <div class="filter-item">
+            <img class="grayscale" src="https://avibirds.com/wp-content/uploads/2023/09/american-white-ibis.jpg" alt="Grayscale">
+            <div class="filter-name">Grayscale</div>
+        </div>
+        <div class="filter-item">
+            <img class="invert" src="https://avibirds.com/wp-content/uploads/2023/09/american-white-ibis.jpg" alt="Invert">
+            <div class="filter-name">Invert</div>
+        </div>
+        <div class="filter-item">
+            <img class="opacity" src="https://avibirds.com/wp-content/uploads/2023/09/american-white-ibis.jpg" alt="Opacity">
+            <div class="filter-name">Opacity</div>
+        </div>
+        <div class="filter-item">
+            <img class="contrast" src="https://avibirds.com/wp-content/uploads/2023/09/american-white-ibis.jpg" alt="Contrast">
+            <div class="filter-name">Contrast</div>
+        </div>
+        <div class="filter-item">
+            <img class="brightness" src="https://avibirds.com/wp-content/uploads/2023/09/american-white-ibis.jpg" alt="Brightness">
+            <div class="filter-name">Brightness</div>
+        </div>
+        <div class="filter-item">
+            <img class="sepia" src="https://avibirds.com/wp-content/uploads/2023/09/american-white-ibis.jpg" alt="Sepia">
+            <div class="filter-name">Sepia</div>
+        </div>
+        <div class="filter-item">
+            <img class="blur" src="https://avibirds.com/wp-content/uploads/2023/09/american-white-ibis.jpg" alt="Blur">
+            <div class="filter-name">Blur</div>
+        </div>
+        <div class="filter-item">
+            <img class="saturate" src="https://avibirds.com/wp-content/uploads/2023/09/american-white-ibis.jpg" alt="Saturate">
+            <div class="filter-name">Saturate</div>
+        </div>
+    </div>
+</body>
+</html></div>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+   body{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         background-color: #f1f1f1;
+         flex-direction: column;
+   }
+   h2{
+    color: #333;
+    text-shadow: 2px 2px 15px rgba(255, 0, 0, 0.6);
+   }
+   .container{
+    margin-top: 50px;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    box-shadow: 2px 2px 5px 10px rgba(96, 96, 96, 0.2);
+   }
+    .box1{
+     background-color: #f00;
+     width: 250px;
+     height: 250px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     box-shadow: 2px 2px 5px 10px rgba(96, 96, 96, 0.2);
+     z-index: 5;
+    }
+    .box2{
+     background-color: #0f0;
+     width: 250px;
+     height: 250px;
+     position: absolute;
+     top: 25px;
+     left: 25px;
+     z-index: 4;
+     box-shadow: 2px 2px 5px 10px rgba(96, 96, 96, 0.2);
+    }
+    .box3{
+     background-color: #00f;
+     width: 250px;
+     height: 250px;
+     position: absolute;
+     top: 50px;
+     left: 50px;
+     z-index: 3;
+     box-shadow: 2px 2px 5px 10px rgba(96, 96, 96, 0.2);
+
+    }
+    .box4{
+     background-color: #ff0;
+     width: 250px;
+     height: 250px;
+     position: absolute;
+     top: 75px;
+     left: 75px;
+     z-index: 2;
+     box-shadow: 2px 2px 5px 10px rgba(96, 96, 96, 0.2);
+    }
+    .box5{
+     background-color: #f0f;
+     width: 250px;
+     height: 250px;
+     position: absolute;
+     top: 100px;
+     left: 100px;
+     z-index: 1;     
+     box-shadow: 2px 2px 5px 10px rgba(96, 96, 96, 0.2);
+    }
+
+</style>
+<body>
+    <h2>Z-Index</h2>
+    <div class="container">
+        <div class="box1">
+            <p>01</p>
+        </div>
+        <div class="box2">
+        <p>02</p>
+        </div>
+        <div class="box3">
+        <p>03</p>
+        </div>
+        <div class="box4">
+        <p>04</p>
+        </div>
+        <div class="box5">
+        <p>05</p>
+        </div>
+    </div>
+</body>
+</html>

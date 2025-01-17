@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Index</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display:grid;
+        place-items:center;
+        height: 100vh;
+        background-color: #f1f1f1;
+    }
+    .container {
+        box-shadow: 7px 5px 5px 10px  rgba(96, 96, 96, 0.2); 
+        width: 350px;
+         height: 350px;
+         position: relative;
+    }
+    h3{
+        text-align: center;
+        margin: 10px 0;
+        text-shadow: 2px 2px 15px rgba(249, 114, 4, 0.6);
+    }
+    .box1{
+        position: absolute;
+        background-color:transparent;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: 50px;
+        left:50px;
+        color:white;
+        text-align: center;
+        z-index: 1;
+        font-weight: 100;
+        border:2px solid white;
+        padding: 10px;
+        box-shadow: 2px 2px 5px 10px rgba(255, 255, 255, 0.2);
+
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        filter:brightness(60%);
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h3>Nature</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laboriosam ullam aspernatur ab nostrum molestiae recusandae sit dolorum consequuntur</p>
+        </div>
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"/>
+    </div>
+</body>
+</html>

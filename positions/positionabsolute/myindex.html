@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #f1f1f1;
+        height: 100%;
+    }
+    .container{
+        border:2px solid black;
+        /* position: relative; */
+        background-color: antiquewhite;
+        height: 700px;
+    }
+    .container img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        filter: brightness(100%);
+        margin:20px; 
+    }
+    .image1{
+        position:sticky;
+    }
+    .image4{
+        position:fixed;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <img class="image1" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="1">
+        <img class='image2' src="https://images.unsplash.com/photo-1511497584788-876760111969" alt="2">
+        <img class="image3" src="https://images.unsplash.com/photo-1518837695005-2083093ee35b" alt="3">
+        <img class="image4" src="https://images.unsplash.com/photo-1509316785289-025f5b846b35" alt="4">
+    </div>
+    
+</body>
+</html>

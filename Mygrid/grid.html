@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Grid</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100%;
+        width:100%;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color:rgb(22, 35, 45);
+        display: grid;
+        /* grid-template-rows:repeat(4,200px);
+        grid-template-columns:repeat(1,1fr); */
+        grid-template-rows:repeat(4,1fr);
+        grid-template-columns:repeat(3,1fr);
+        gap:0.5rem;
+        padding:4rem;
+    }
+    .item{
+        width:100px;
+        height:100px;
+        background-color: whitesmoke;
+        border:2px solid #000;
+        justify-self:start;
+         align-self:start; /*cell ni ander */
+         /*place-self:center = justify-self+align-self*/
+    }
+     
+</style>
+<body>
+    <div class="container">
+         <div class="item item1">A</div>
+         <div class="item item2">B</div>
+         <div class="item item3">C</div>
+         <div class="item item4">D</div>
+         <div class="item item5">E</div>
+         <div class="item item6">F</div>
+         <div class="item item7">G</div>
+         <div class="item item8">H</div>
+         <div class="item item9">I</div>
+         <div class="item item10">J</div>
+         <div class="item item11">K</div>
+         <div class="item item12">L</div>
+    </div>
+</body>
+</html>
